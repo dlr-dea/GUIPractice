@@ -21,6 +21,7 @@ public class Main {
     GradeCalculator gradeCalculator = new GradeCalculator();
         gradeCalculator.setVisible(true);
 
+
         /*
         JPanel panel = new JPanel();
         JFrame frame = new JFrame();

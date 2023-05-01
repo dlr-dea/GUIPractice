@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="37afb6e9-8312-4a81-b0d2-4bc674e50f8d" name="Changes" comment="Swing, JLabel, JPanel">
-      <change afterPath="$PROJECT_DIR$/src/GradeCalculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/GradeOutput.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
+    <list default="true" id="37afb6e9-8312-4a81-b0d2-4bc674e50f8d" name="Changes" comment="for final revision">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GradeCalculator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GradeOutput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Student.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,11 +59,35 @@
       <option name="project" value="LOCAL" />
       <updated>1682397756783</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="for final revision">
+      <created>1682913861599</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1682913861599</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Swing, JLabel, JPanel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Swing, JLabel, JPanel" />
+    <MESSAGE value="for final revision" />
+    <option name="LAST_COMMIT_MESSAGE" value="for final revision" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

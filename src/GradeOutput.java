@@ -25,10 +25,10 @@ public class GradeOutput extends JFrame {
         // Create labels
         lblStudentName = new JLabel("Student Name:");
         lblStudentNo = new JLabel("Student No:");
-        lblQuiz1 = new JLabel("Quiz 1:");
+        lblQuiz1 = new JLabel("Milestone 1:");
         lblQuizDescription1 = new JLabel("");
-        lblQuiz2 = new JLabel("Quiz 2:");
-        lblQuiz3 = new JLabel("Quiz 3:");
+        lblQuiz2 = new JLabel("Milestone 2:");
+        lblQuiz3 = new JLabel("Terminal Assessment:");
         lblAveGrade = new JLabel("Average Grade:");
 
         // Create Student Name textfield
@@ -65,7 +65,7 @@ public class GradeOutput extends JFrame {
         // Create Close button
         closeButton = new JButton("Close");
 
-        // Define the panel to hold the components  
+        // Define the panel to hold the components
         JPanel panel = new JPanel();
         SpringLayout layout = new SpringLayout();
         panel.setSize(300, 300);

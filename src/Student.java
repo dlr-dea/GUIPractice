@@ -43,6 +43,8 @@ public class Student {
             studentName = studName;
         }
 
+
+
         public void setQuiz1(float q1) {
             quiz1 = q1;
         }
@@ -55,10 +57,12 @@ public class Student {
             quiz3 = q3;
         }
 
-        //methods
-        public float computeAverage() {
-            averageGrade = (quiz1 + quiz2 + quiz3) / 3;
-            return averageGrade;
-        }
-    }
 
+    //methods
+    public float computeAverage() {
+        averageGrade = quiz1 + quiz2 + quiz3;
+        return averageGrade;
+
+
+    }
+}

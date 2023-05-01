@@ -19,14 +19,14 @@ import javax.swing.SpringLayout;
             // Create the components
             // Create labels and textfields
             lblStudentName = new JLabel("Student Name:");
-            txtStudentName = new JTextField(30);
+            txtStudentName = new JTextField(20);
             lblStudentNo = new JLabel("Student No:");
-            txtStudentNo = new JTextField(30);
-            lblQuiz1 = new JLabel("Quiz 1:");
+            txtStudentNo = new JTextField(20);
+            lblQuiz1 = new JLabel("Milestone 1:");
             txtQuiz1 = new JTextField(10);
-            lblQuiz2 = new JLabel("Quiz 2:");
+            lblQuiz2 = new JLabel("Milestone 2:");
             txtQuiz2 = new JTextField(10);
-            lblQuiz3 = new JLabel("Quiz 3:");
+            lblQuiz3 = new JLabel("Terminal Assessment:");
             txtQuiz3 = new JTextField(10);
             calculateButton = new JButton("Calculate");
 
@@ -60,11 +60,11 @@ import javax.swing.SpringLayout;
             // Set label and textfield position: top and bottom
             layout.putConstraint(SpringLayout.NORTH, lblStudentName, 6, SpringLayout.NORTH, panel);
             layout.putConstraint(SpringLayout.NORTH, txtStudentName, 6, SpringLayout.NORTH, panel);
-            layout.putConstraint(SpringLayout.NORTH, lblStudentNo, 10, SpringLayout.SOUTH, lblStudentName);
+            layout.putConstraint(SpringLayout.NORTH, lblStudentNo, 20, SpringLayout.SOUTH, lblStudentName);
             layout.putConstraint(SpringLayout.NORTH, txtStudentNo, 6, SpringLayout.SOUTH, txtStudentName);
-            layout.putConstraint(SpringLayout.NORTH, lblQuiz1, 10, SpringLayout.SOUTH, lblStudentNo);
+            layout.putConstraint(SpringLayout.NORTH, lblQuiz1, 20, SpringLayout.SOUTH, lblStudentNo);
             layout.putConstraint(SpringLayout.NORTH, txtQuiz1, 6, SpringLayout.SOUTH, txtStudentNo);
-            layout.putConstraint(SpringLayout.NORTH, lblQuiz2, 10, SpringLayout.SOUTH, lblQuiz1);
+            layout.putConstraint(SpringLayout.NORTH, lblQuiz2, 15, SpringLayout.SOUTH, lblQuiz1);
             layout.putConstraint(SpringLayout.NORTH, txtQuiz2, 6, SpringLayout.SOUTH, txtQuiz1);
             layout.putConstraint(SpringLayout.NORTH, lblQuiz3, 10, SpringLayout.SOUTH, lblQuiz2);
             layout.putConstraint(SpringLayout.NORTH, txtQuiz3, 6, SpringLayout.SOUTH, txtQuiz2);
@@ -97,8 +97,10 @@ import javax.swing.SpringLayout;
                     stud.setQuiz2(Float.parseFloat(txtQuiz2.getText()));
                     stud.setQuiz3(Float.parseFloat(txtQuiz3.getText()));
 
+
                     double quiz1 = Double.parseDouble(stud.getQuiz1());
-                    if(quiz1 >= 25) {
+
+                    if(quiz1 < 0 || quiz1 > 25) {
                         JOptionPane.showMessageDialog(null, "Quiz1 should be less than or equal to 25 points.",
                                 "Error", JOptionPane.ERROR_MESSAGE);
                     } else {
@@ -108,7 +110,7 @@ import javax.swing.SpringLayout;
                     }
 
                     double quiz2 = Double.parseDouble(stud.getQuiz2());
-                    if(quiz2 >= 40) {
+                    if(quiz2 < 0 || quiz2 > 40) {
                         JOptionPane.showMessageDialog(null, "Quiz2 should be less than or equal to 40 points.",
                                 "Error", JOptionPane.ERROR_MESSAGE);
                     } else {
@@ -119,7 +121,7 @@ import javax.swing.SpringLayout;
                     }
 
                     double quiz3 = Double.parseDouble(stud.getQuiz3());
-                    if(quiz3 >= 35) {
+                    if(quiz1 < 0 || quiz1 > 35) {
                         JOptionPane.showMessageDialog(null, "Quiz3 should be less than or equal to 35 points.",
                                 "Error", JOptionPane.ERROR_MESSAGE);
                     } else {
@@ -132,4 +134,3 @@ import javax.swing.SpringLayout;
             });
         }
     }
-
